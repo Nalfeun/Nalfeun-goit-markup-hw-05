@@ -116,6 +116,7 @@ a {
 
 .header-link {
   position: relative;
+  transition: color 250ms var(--timing-function);
 }
 
 .header-link::after {
@@ -153,6 +154,7 @@ a {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  transition: color 250ms var(--timing-function);
 }
 
 a.mail:hover,
@@ -555,6 +557,10 @@ a.tel:focus {
   padding-bottom: 60px;
 }
 
+.footer-link {
+  transition: color 250ms var(--timing-function);
+}
+
 .footer a:hover,
 .footer a:focus {
   color: var(--accent-color);
@@ -617,7 +623,6 @@ a.tel:focus {
 
 .address a {
   display: inline-block;
-  margin-bottom: 9px;
   color: rgba(255, 255, 255, 0.6);
 
   font-family: Roboto, sans-serif;
@@ -625,6 +630,10 @@ a.tel:focus {
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
+}
+
+.adress-item {
+  margin-bottom: 9px;
 }
 
 .footer .mobile {
@@ -650,7 +659,8 @@ a.connection {
   text-align: center;
   letter-spacing: 0.03em;
   transition: color 250ms var(--timing-function),
-    background-color 250ms var(--timing-function);
+    background-color 250ms var(--timing-function),
+    box-shadow 250ms var(--timing-function);
 }
 
 .button.active {
@@ -730,6 +740,7 @@ a.connection {
 
 .link-project {
   display: block;
+  transition: box-shadow 250ms var(--timing-function);
 }
 
 .project-overlay {
